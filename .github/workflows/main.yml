@@ -11,7 +11,7 @@ jobs:
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@v4.3.5
       with:
-        server:  naam-van-server.com
-        username: myFtpUserName
-        password: ${{ secrets.ftp_password }}
+        server:  klas4s24.mid-ica.nl
+        username: ${{ secrets.FTPUSERNAME }}
+        password: ${{ secrets.FTPPASSWORD }}
         server-dir: public_html/test-push-ftp/
